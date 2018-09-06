@@ -1,7 +1,7 @@
-[![License](https://poser.pugx.org/aggrego/integration/license.svg)](https://packagist.org/packages/aggrego/integration-client)
-[![Latest Stable Version](https://poser.pugx.org/aggrego/integration-client/v/stable.svg)](https://packagist.org/packages/aggrego/integration-client)
-[![Total Downloads](https://poser.pugx.org/aggrego/integration-client/downloads.svg)](https://packagist.org/packages/aggrego/integration-client)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aggrego/integration-client/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aggrego/integration-client/?branch=master)
+[![License](https://poser.pugx.org/aggrego/event-store/license.svg)](https://packagist.org/packages/aggrego/event-store)
+[![Latest Stable Version](https://poser.pugx.org/aggrego/event-store/v/stable.svg)](https://packagist.org/packages/aggrego/event-store)
+[![Total Downloads](https://poser.pugx.org/aggrego/event-store/downloads.svg)](https://packagist.org/packages/aggrego/event-store)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aggrego/event-store/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aggrego/event-store/?branch=master)
 
 ## Versioning
  
