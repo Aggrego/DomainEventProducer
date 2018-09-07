@@ -11,7 +11,8 @@
     }
   ],
   "require": {
-    "php": ">=7.1"
+    "php": ">=7.1",
+    "timitao/value-object": "dev-master"
   },
   "require-dev": {
     "phpspec/phpspec": "^5.0",

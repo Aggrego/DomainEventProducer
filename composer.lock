@@ -4,8 +4,100 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eccc28ee708e182a03cd5dee693b42d8",
-    "packages": [],
+    "content-hash": "32b12be6a272ea80b86f8112dee57c04",
+    "packages": [
+        {
+            "name": "beberlei/assert",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beberlei/assert.git",
+                "reference": "891103759a35926323be6296ebd3f1579a52d82a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/891103759a35926323be6296ebd3f1579a52d82a",
+                "reference": "891103759a35926323be6296ebd3f1579a52d82a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.1.1",
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Assert\\": "lib/Assert"
+                },
+                "files": [
+                    "lib/Assert/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Richard Quadling",
+                    "email": "rquadling@gmail.com",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Thin assertion library for input validation in business models.",
+            "keywords": [
+                "assert",
+                "assertion",
+                "validation"
+            ],
+            "time": "2018-07-04T11:02:54+00:00"
+        },
+        {
+            "name": "timitao/value-object",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timiTao/ValueObject.git",
+                "reference": "ff34dbafb27dfd019a110e05cf5d23ee75a29c56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timiTao/ValueObject/zipball/ff34dbafb27dfd019a110e05cf5d23ee75a29c56",
+                "reference": "ff34dbafb27dfd019a110e05cf5d23ee75a29c56",
+                "shasum": ""
+            },
+            "require": {
+                "beberlei/assert": "^3.0",
+                "php": ">=7.1"
+            },
+            "type": "domain",
+            "autoload": {
+                "psr-4": {
+                    "TimiTao\\ValueObject\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Kunicki"
+                }
+            ],
+            "time": "2018-09-07T13:57:26+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -402,12 +494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da"
+                "reference": "2256ef8e824cc494ddeebaa00fabe7ab4d83fc75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
-                "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2256ef8e824cc494ddeebaa00fabe7ab4d83fc75",
+                "reference": "2256ef8e824cc494ddeebaa00fabe7ab4d83fc75",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +550,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-07-12T15:12:46+00:00"
+            "time": "2018-09-07T13:55:31+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -1160,7 +1252,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "timitao/value-object": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
