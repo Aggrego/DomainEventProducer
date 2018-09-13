@@ -6,5 +6,7 @@ namespace Aggrego\EventStore;
 
 interface Aggregate
 {
+    public function getUuid(): Uuid;
+
     public function pullEvents(): Events;
 }
