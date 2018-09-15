@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore\Shared\Event\Model;
+namespace Aggrego\EventStore\Shared;
 
 use Aggrego\EventStore\Event;
 use Aggrego\EventStore\Events;
