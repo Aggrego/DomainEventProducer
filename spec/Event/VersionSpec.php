@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Aggrego\EventStore\Event;
+namespace spec\Aggrego\AggregateEventConsumer\Event;
 
-use Aggrego\EventStore\Event\Version;
+use Aggrego\AggregateEventConsumer\Event\Version;
 use InvalidArgumentException;
 use PhpSpec\ObjectBehavior;
 

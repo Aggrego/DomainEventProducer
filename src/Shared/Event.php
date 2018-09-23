@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore\Shared;
+namespace Aggrego\AggregateEventConsumer\Shared;
 
-use Aggrego\EventStore\Event as EventInterface;
-use Aggrego\EventStore\Event\CreatedAt;
-use Aggrego\EventStore\Event\Name;
-use Aggrego\EventStore\Event\Version;
+use Aggrego\AggregateEventConsumer\Event as EventInterface;
+use Aggrego\AggregateEventConsumer\Event\CreatedAt;
+use Aggrego\AggregateEventConsumer\Event\Name;
+use Aggrego\AggregateEventConsumer\Event\Version;
 use DateTimeImmutable;
 
 abstract class Event implements EventInterface

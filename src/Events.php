@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore;
+namespace Aggrego\AggregateEventConsumer;
 
 use ArrayIterator;
 use Iterator;

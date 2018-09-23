@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Aggrego\EventStore\Event;
+namespace spec\Aggrego\AggregateEventConsumer\Event;
 
-use Aggrego\EventStore\Event\CreatedAt;
+use Aggrego\AggregateEventConsumer\Event\CreatedAt;
 use DateTimeImmutable;
 use PhpSpec\ObjectBehavior;
 

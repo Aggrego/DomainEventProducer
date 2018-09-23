@@ -2,11 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore;
+namespace Aggrego\AggregateEventConsumer;
 
-use Aggrego\EventStore\Event\CreatedAt;
-use Aggrego\EventStore\Event\Name;
-use Aggrego\EventStore\Event\Version;
+use Aggrego\AggregateEventConsumer\Event\CreatedAt;
+use Aggrego\AggregateEventConsumer\Event\Name;
+use Aggrego\AggregateEventConsumer\Event\Version;
 
 interface Event
 {

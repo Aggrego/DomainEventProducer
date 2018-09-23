@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore\Event;
+namespace Aggrego\AggregateEventConsumer\Event;
 
 use DateTimeImmutable;
 use TimiTao\ValueObject\Utils\TimestampValueObject;

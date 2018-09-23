@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Aggrego\EventStore;
+namespace spec\Aggrego\AggregateEventConsumer;
 
-use Aggrego\EventStore\Uuid;
+use Aggrego\AggregateEventConsumer\Uuid;
 use InvalidArgumentException;
 use PhpSpec\ObjectBehavior;
 

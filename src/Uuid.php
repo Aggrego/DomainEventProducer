@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore;
+namespace Aggrego\AggregateEventConsumer;
 
 use Assert\Assertion;
 use TimiTao\ValueObject\Utils\StringValueObject;
@@ -14,7 +14,7 @@ class Uuid extends StringValueObject
         Assertion::regex(
             $value,
             '/^[0-9A-F]{8}-[0-9A-F]{4}-[1-5][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i',
-            'Incorrect UUID format: '. $value
+            'Incorrect UUID format: ' . $value
         );
         parent::__construct(self::class, $value);
     }

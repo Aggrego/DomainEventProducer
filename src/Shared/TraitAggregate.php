@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\EventStore\Shared;
+namespace Aggrego\AggregateEventConsumer\Shared;
 
-use Aggrego\EventStore\Event;
-use Aggrego\EventStore\Events;
+use Aggrego\AggregateEventConsumer\Event;
+use Aggrego\AggregateEventConsumer\Events;
 
 /**
  * Trait TraitAggregate
- * @see \Aggrego\EventStore\Aggregate
+ * @see \Aggrego\AggregateEventConsumer\Aggregate
  */
 trait TraitAggregate
 {

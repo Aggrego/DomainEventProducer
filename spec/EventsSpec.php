@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Aggrego\EventStore;
+namespace spec\Aggrego\AggregateEventConsumer;
 
-use Aggrego\EventStore\Event;
-use Aggrego\EventStore\Events;
+use Aggrego\AggregateEventConsumer\Event;
+use Aggrego\AggregateEventConsumer\Events;
 use IteratorAggregate;
 use PhpSpec\ObjectBehavior;
 
