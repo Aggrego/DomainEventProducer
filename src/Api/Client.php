@@ -1,22 +1,32 @@
 <?php
+/**
+ *
+ * This file is part of the Aggrego.
+ * (c) Tomasz Kunicki <kunicki.tomasz@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ */
 
 declare(strict_types = 1);
 
 namespace Aggrego\AggregateEventConsumer\Api;
 
 use Aggrego\AggregateEventConsumer\Aggregate;
-use Aggrego\EventConsumer\Api\Client;
+use Aggrego\EventConsumer\Api\Client as EventConsumerClient;
 use Aggrego\EventConsumer\Event\CreatedAt;
 use Aggrego\EventConsumer\Event\Domain;
+use Aggrego\EventConsumer\Event\Name;
 use Aggrego\EventConsumer\Event\Version;
 use Aggrego\EventConsumer\Shared\Event;
 
-class Storage
+class Client
 {
-    /** @var Client */
+    /** @var EventConsumerClient */
     private $eventConsumer;
 
-    public function __construct(Client $eventConsumer)
+    public function __construct(EventConsumerClient $eventConsumer)
     {
         $this->eventConsumer = $eventConsumer;
     }
@@ -31,15 +41,13 @@ class Storage
                     get_class($aggregate),
                     $aggregateUuid->getValue()
                 ),
+                new Name($event->getName()->getValue()),
                 new CreatedAt($event->createdAt()->getDateTime()),
                 new Version($event->getVersion()->getValue()),
                 $event->getPayload()
             );
 
-            if ($this->eventConsumer->isSupported($consumerEvent)) {
-                $this->eventConsumer->consume($consumerEvent);
-            }
+            $this->eventConsumer->consume($consumerEvent);
         }
     }
-
 }
