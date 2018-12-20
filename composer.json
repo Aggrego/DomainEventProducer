@@ -1,5 +1,5 @@
 {
-  "name": "aggrego/aggregate-event-consumer",
+  "name": "aggrego/domain-event-producer",
   "type": "library",
   "description": "",
   "minimum-stability": "dev",
@@ -12,10 +12,8 @@
   ],
   "require": {
     "php": ">=7.1",
-    "timitao/value-object": "dev-master",
     "aggrego/event-consumer": "dev-master",
-    "beberlei/assert": "^3.0",
-    "composer/semver": "1.4.*"
+    "aggrego/domain": "dev-master"
   },
   "require-dev": {
     "wikimedia/composer-merge-plugin": "1.4.*",
@@ -23,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aggrego\\AggregateEventConsumer\\": "src/"
+      "Aggrego\\DomainEventProducer\\": "src/"
     }
   }
 }

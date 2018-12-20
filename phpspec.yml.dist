@@ -1,4 +1,4 @@
 suites:
   default:
-    namespace: Aggrego\AggregateEventConsumer
-    psr4_prefix: Aggrego\AggregateEventConsumer
+    namespace: Aggrego\DomainEventProducer
+    psr4_prefix: Aggrego\DomainEventProducer

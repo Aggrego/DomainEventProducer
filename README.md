@@ -1,8 +1,8 @@
-[![License](https://poser.pugx.org/aggrego/aggregate-event-consumer/license.svg)](https://packagist.org/packages/aggrego/aggregate-event-consumer)
-[![Latest Stable Version](https://poser.pugx.org/aggrego/aggregate-event-consumer/v/stable.svg)](https://packagist.org/packages/aggrego/aggregate-event-consumer)
-[![Total Downloads](https://poser.pugx.org/aggrego/aggregate-event-consumer/downloads.svg)](https://packagist.org/packages/aggrego/aggregate-event-consumer)
-[![Travis](https://travis-ci.org/Aggrego/AggregateEventConsumer.svg?branch=master)](https://travis-ci.org/Aggrego/AggregateEventConsumer/builds)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Aggrego/AggregateEventConsumer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Aggrego/AggregateEventConsumer/?branch=master)
+[![License](https://poser.pugx.org/aggrego/domain-event-producer/license.svg)](https://packagist.org/packages/aggrego/domain-event-producer)
+[![Latest Stable Version](https://poser.pugx.org/aggrego/domain-event-producer/v/stable.svg)](https://packagist.org/packages/aggrego/domain-event-producer)
+[![Total Downloads](https://poser.pugx.org/aggrego/domain-event-producer/downloads.svg)](https://packagist.org/packages/aggrego/domain-event-producer)
+[![Travis](https://travis-ci.org/Aggrego/DomainEventProducer.svg?branch=master)](https://travis-ci.org/Aggrego/DomainEventProducer/builds)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Aggrego/DomainEventProducer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Aggrego/DomainEventProducer/?branch=master)
 
 ## Versioning
  
