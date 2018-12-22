@@ -51,7 +51,7 @@ class Repository implements DomainRepository
     public function addBoard(Board $board): void
     {
         $this->modified[] = $board->getUuid();
-        $this->addBoard($board);
+        $this->repository->addBoard($board);
     }
 
     public function pullUuids(): array
