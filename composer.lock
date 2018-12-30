@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Aggrego/Domain.git",
-                "reference": "08ba4e4ffff8a0e231882d98a7a444c8dc914104"
+                "reference": "a76ba37e2e132ed94524f7d0e1eb0b8b7a02c35b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/Domain/zipball/08ba4e4ffff8a0e231882d98a7a444c8dc914104",
-                "reference": "08ba4e4ffff8a0e231882d98a7a444c8dc914104",
+                "url": "https://api.github.com/repos/Aggrego/Domain/zipball/a76ba37e2e132ed94524f7d0e1eb0b8b7a02c35b",
+                "reference": "a76ba37e2e132ed94524f7d0e1eb0b8b7a02c35b",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                     "name": "Tomasz Kunicki"
                 }
             ],
-            "time": "2018-12-27T23:22:58+00:00"
+            "time": "2018-12-28T08:52:50+00:00"
         },
         {
             "name": "aggrego/event-consumer",
@@ -1066,12 +1066,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "79a050b2acd61a655000208873ed9ff33320fc19"
+                "reference": "20e4894521056ff6aa059015143bb971d475469a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/79a050b2acd61a655000208873ed9ff33320fc19",
-                "reference": "79a050b2acd61a655000208873ed9ff33320fc19",
+                "url": "https://api.github.com/repos/symfony/console/zipball/20e4894521056ff6aa059015143bb971d475469a",
+                "reference": "20e4894521056ff6aa059015143bb971d475469a",
                 "shasum": ""
             },
             "require": {
@@ -1127,7 +1127,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-12-24T10:03:37+00:00"
+            "time": "2018-12-24T13:40:20+00:00"
         },
         {
             "name": "symfony/contracts",
