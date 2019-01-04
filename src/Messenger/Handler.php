@@ -17,7 +17,7 @@ use Aggrego\Domain\Board\Uuid;
 use Aggrego\DomainEventProducer\Domain\Repository;
 use Aggrego\EventConsumer\Client;
 
-class Handler
+abstract class Handler
 {
     /** @var Repository */
     protected $repository;
