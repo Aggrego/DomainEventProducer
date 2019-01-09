@@ -1,12 +1,10 @@
 <?php
 /**
- *
  * This file is part of the Aggrego.
  * (c) Tomasz Kunicki <kunicki.tomasz@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- *
  */
 
 declare(strict_types = 1);
@@ -22,7 +20,9 @@ use Aggrego\EventConsumer\Client;
 
 class CreateBoardHandler extends Handler
 {
-    /** @var UseCase */
+    /**
+     * @var UseCase
+     */
     private $useCase;
 
     public function __construct(UseCase $useCase, Repository $repository, Client $client)
@@ -43,5 +43,4 @@ class CreateBoardHandler extends Handler
 
         return $result;
     }
-
 }

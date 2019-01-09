@@ -1,12 +1,10 @@
 <?php
 /**
- *
  * This file is part of the Aggrego.
  * (c) Tomasz Kunicki <kunicki.tomasz@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- *
  */
 
 declare(strict_types = 1);
@@ -21,10 +19,14 @@ use Aggrego\Domain\Board\Uuid;
 
 class Repository implements DomainRepository
 {
-    /** @var DomainRepository */
+    /**
+     * @var DomainRepository
+     */
     private $repository;
 
-    /** @var Uuid[] */
+    /**
+     * @var Uuid[]
+     */
     private $modified = [];
 
     public function __construct(DomainRepository $repository)
@@ -34,7 +36,7 @@ class Repository implements DomainRepository
     }
 
     /**
-     * @param Uuid $uuid
+     * @param  Uuid $uuid
      * @return Board
      * @throws BoardNotFoundException
      */
@@ -45,7 +47,7 @@ class Repository implements DomainRepository
     }
 
     /**
-     * @param Board $board
+     * @param  Board $board
      * @throws BoardExistException
      */
     public function addBoard(Board $board): void

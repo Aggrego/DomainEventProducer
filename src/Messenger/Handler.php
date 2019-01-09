@@ -1,12 +1,10 @@
 <?php
 /**
- *
  * This file is part of the Aggrego.
  * (c) Tomasz Kunicki <kunicki.tomasz@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- *
  */
 
 declare(strict_types = 1);
@@ -19,10 +17,14 @@ use Aggrego\EventConsumer\Client;
 
 abstract class Handler
 {
-    /** @var Repository */
+    /**
+     * @var Repository
+     */
     protected $repository;
 
-    /** @var Client */
+    /**
+     * @var Client
+     */
     private $client;
 
     public function __construct(Repository $repository, Client $client)
