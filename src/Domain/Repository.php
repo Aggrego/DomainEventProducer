@@ -18,6 +18,7 @@ use Aggrego\Domain\Board\Exception\BoardExistException;
 use Aggrego\Domain\Board\Exception\BoardNotFoundException;
 use Aggrego\Domain\Board\Repository as DomainRepository;
 use Aggrego\Domain\Board\Uuid;
+use Aggrego\EventConsumer\Shared\Events;
 
 class Repository implements DomainRepository
 {
@@ -33,7 +34,7 @@ class Repository implements DomainRepository
 
     public function __construct(DomainRepository $repository)
     {
-        $this->clearModified();
+        $this->modified = [];
         $this->repository = $repository;
     }
 
@@ -44,8 +45,9 @@ class Repository implements DomainRepository
      */
     public function getBoardByUuid(Uuid $uuid): Board
     {
+        $board = $this->repository->getBoardByUuid($uuid);
         $this->modified[] = $uuid;
-        return $this->repository->getBoardByUuid($uuid);
+        return $board;
     }
 
     /**
@@ -54,24 +56,20 @@ class Repository implements DomainRepository
      */
     public function addBoard(Board $board): void
     {
-        $this->modified[] = $board->getUuid();
         $this->repository->addBoard($board);
+        $this->modified[] = $board->getUuid();
     }
 
-    public function pullUuids(): array
+    public function pullEvents(): Events
     {
-        $uuids = $this->modified;
-        $this->clearModified();
-        return $uuids;
-    }
-
-    private function clearModified(): void
-    {
+        $events = new Events();
+        foreach ($this->modified as $uuid) {
+            foreach ($this->repository->getBoardByUuid($uuid)->pullEvents() as $event)
+            {
+                $events->add($event);
+            }
+        }
         $this->modified = [];
-    }
-
-    public function getOriginRepository(): DomainRepository
-    {
-        return $this->repository;
+        return $events;
     }
 }

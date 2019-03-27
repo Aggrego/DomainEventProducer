@@ -11,35 +11,33 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\DomainEventProducer\Messenger;
+namespace Aggrego\DomainEventProducer\EventConsumer;
 
-use Aggrego\Domain\Board\Uuid;
 use Aggrego\DomainEventProducer\Domain\Repository;
 use Aggrego\EventConsumer\Client;
 
-abstract class Handler
+class Producer
 {
     /**
      * @var Repository
      */
-    protected $repository;
+    private $repository;
 
     /**
      * @var Client
      */
-    private $client;
+    private $eventConsumer;
 
-    public function __construct(Repository $repository, Client $client)
+    public function __construct(Repository $repository, Client $eventConsumer)
     {
         $this->repository = $repository;
-        $this->client = $client;
+        $this->eventConsumer = $eventConsumer;
     }
 
-    protected function process(Uuid $uuid): void
+    public function publish(): void
     {
-        $board = $this->repository->getOriginRepository()->getBoardByUuid($uuid);
-        foreach ($board->pullEvents() as $event) {
-            $this->client->consume($event);
+        foreach ($this->repository->pullEvents() as $event) {
+            $this->eventConsumer->consume($event);
         }
     }
 }
