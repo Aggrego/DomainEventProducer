@@ -8,9 +8,17 @@
 
 This module is cross-cut for pulling events from domain and pushing them to consume.
 
+As `Board\Repository`'s decorator it implements `UnitOfWork` - after executing command, pull all releated `Events` from aggregates.
+
+
+## Related libs
+
+* [Domain](https://github.com/Aggrego/Domain)
+* [EventConsumer](https://github.com/Aggrego/EventConsumer)
+
 ## Versioning
  
-Staring version ``1.0.0``, will follow [Semantic Versioning v2.0.0](http://semver.org/spec/v2.0.0.html).
+Staring version ``0.1.0``, will follow [Semantic Versioning v2.0.0](http://semver.org/spec/v2.0.0.html).
 
 ## Contributors
 
