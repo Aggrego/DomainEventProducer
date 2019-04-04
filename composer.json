@@ -12,8 +12,8 @@
   ],
   "require": {
     "php": ">=7.1",
-    "aggrego/event-consumer": "dev-master",
-    "aggrego/domain": "dev-master"
+    "aggrego/event-consumer": "^0",
+    "aggrego/domain": "^0"
   },
   "require-dev": {
     "wikimedia/composer-merge-plugin": "1.4.*",
