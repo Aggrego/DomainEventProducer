@@ -64,8 +64,7 @@ class Repository implements DomainRepository
     {
         $events = new Events();
         foreach ($this->modified as $uuid) {
-            foreach ($this->repository->getBoardByUuid($uuid)->pullEvents() as $event)
-            {
+            foreach ($this->repository->getBoardByUuid($uuid)->pullEvents() as $event) {
                 $events->add($event);
             }
         }
