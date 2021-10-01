@@ -34,7 +34,7 @@ class RepositorySpec extends ObjectBehavior
 
     function it_should_add_board(Board $board)
     {
-        $board->getUuid()->willReturn(new Uuid('ff6f8cb0-c57d-11e1-9b21-0800200c9a66'));
+        $board->getId()->willReturn(new Uuid('ff6f8cb0-c57d-11e1-9b21-0800200c9a66'));
         $this->addBoard($board)->shouldReturn(null);
     }
 
